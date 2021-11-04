@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - The Bus Transit &amp; Travel Company</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="#">The Bus Transit &amp; Travel Company</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="display-1 masthead-heading mb-0">Bus Transit &amp; Travel Company</h1>
+                <h2 class="masthead-subheading mb-0">Estd. 2019</h2>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <section style="padding: 16px;">
+        <span>Source</span>
+            <select id="src-select" class="form-select" style="margin-bottom: 10px;"></select>
+            <span style="margin-top: 33px;">Destination</span>
+            <select id="des-select" class="form-select" style="margin-bottom: 10px;">
+            </select><div>
+        <form id="bp" name="bp">
+            Bus Preference<br>
+            &nbsp;
+            <input class="form-check-input" type="radio" id="any-bp" name="bp" value="ANY" checked>
+              <label class="form-check-label "for="any-bp">ANY</label><br>
+              <input class="form-check-input" type="radio" id="ac-bp" name="bp" value="1">
+              <label class="form-check-label" for="ac-bp">A/C</label><br>
+              <input class="form-check-input" type="radio" id="nac-bp" name="bp" value="0">
+              <label class="form-check-label" for="nac-bp">Non-A/C</label>
+        </form>
+        
+            
+        <button class="btn btn-primary" type="button" style="margin-top: 10px;" onclick="search()">Search</button>
+        <div id="progress-bar" class="progress hidden" style="margin: 6px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden hidden">100%</span>
+            </div>
+        </div>
+        <b id="nrr" class="hidden"><br><br>No results returned!</b>
+        <ul id="bus-list" class="list-unstyled">
+        </ul>
+    </section>
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="text-center text-white m-0 small">The Bus Transit &amp; Travel Company | BTTC 2019</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
